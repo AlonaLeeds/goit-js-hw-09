@@ -32,7 +32,7 @@ function submitForm(event) {
       email: form.email.value.trim(),
       message: form.message.value.trim(),
    }
-   if (sendDataForm.email === "" || sendDataForm.message === "") {
+   if (sendDataForm.email === "" && sendDataForm.message === "") {
       return alert("Both fields must be filled before sending")
    }
    console.log(sendDataForm);
