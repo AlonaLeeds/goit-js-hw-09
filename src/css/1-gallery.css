@@ -1,0 +1,55 @@
+/*Обнуление*/
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+img{
+   display: block;
+}
+
+.gallery{
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px 0;
+  justify-content: center;
+  gap: 24px;
+}
+
+.gallery-item {
+  max-width: 360px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.3, 1);
+  overflow: hidden;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+ .gallery-item:focus,
+ .gallery-item:hover {
+   transform: scale(1.04);
+
+ }
+
+.gallery-link {
+}
+
+.gallery-image {
+   object-fit: cover;
+   max-width: 100%;
+   min-height: 100%;
+
+} 
+
